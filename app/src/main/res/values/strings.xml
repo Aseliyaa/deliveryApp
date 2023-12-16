@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Foodator</string>
+    <string name="delivery">Tood Delivery App</string>
+    <string name="startBtnText">Get started</string>
+    <string name="introFrontImg">Intro front image</string>
+    <string name="introBackImg">Intro back image</string>
+    <string name="my_app_api_key">AIzaSyBGG4CIXp2tFyz-5LyjtKrRAHZcKz54MkU</string>
+</resources>

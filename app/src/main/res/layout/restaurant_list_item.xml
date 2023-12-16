@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/newRestaurant"
+    android:background="@drawable/white_recommeded_btn"
+    android:elevation="3dp">
+
+
+    <ImageView
+        android:id="@+id/restaurantImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/restaurantName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/burger" />
+
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="title"
+        android:textColor="#373B54"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantImage"
+        app:layout_constraintStart_toStartOf="@+id/restaurantImage"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

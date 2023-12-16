@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+
+    android:background="@drawable/dialog_bg"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:layout_gravity="start" />
+
+    <LinearLayout
+        android:id="@+id/addressBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_home_dark" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:hint="Choose your address"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tub to change address"
+                android:textColor="@color/stripe_paymentsheet_form" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Choose the payment way"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nalPayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/grey_background"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:text="cash"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/cardPayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:text="credit card"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/round_draw_24"
+            android:hint="You can write some detailes here"
+            android:textColor="@color/black"
+            android:textColorHint="@color/stripe_paymentsheet_form" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="24,65 руб."
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Finally"
+                android:textColor="@color/stripe_paymentsheet_form" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/orderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_button"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Order"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
